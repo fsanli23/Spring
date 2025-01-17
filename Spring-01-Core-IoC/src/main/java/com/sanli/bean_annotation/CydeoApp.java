@@ -12,10 +12,12 @@ public class CydeoApp {
         FullTimeMentor f2 = container.getBean(FullTimeMentor.class);
 
         String str = container.getBean(String.class);
-        Integer number = container.getBean(Integer.class);
+        Integer number = container.getBean("number", Integer.class);
+        Integer number01 = container.getBean("number021",Integer.class);
 
         System.out.println("str = " + str);
         System.out.println("number = " + number);
+        System.out.println("number01 = " + number01);
 
 
         System.out.println(ft);

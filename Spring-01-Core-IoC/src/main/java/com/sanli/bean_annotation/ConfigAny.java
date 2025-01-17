@@ -10,9 +10,14 @@ public class ConfigAny {
         return "Developer";
     }
 
-    @Bean
+    @Bean(name="number")
     Integer number(){
         return 100;
+    }
+
+    @Bean(name = "number01")
+    Integer number01(){
+        return 101;
     }
 
 }
