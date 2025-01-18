@@ -15,8 +15,12 @@ public class App {
         comment.setText("Spring framework");
 
         ApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        CommentService commentService = context.getBean(CommentService.class);
-        commentService.publishComment(comment);
+        CommentService c1 = context.getBean(CommentService.class);
+        CommentService c2 = context.getBean(CommentService.class);
+
+        System.out.println(c1 == c2);
+
+
 
 
     }
