@@ -12,17 +12,21 @@ public class CydeoApp {
         FullTimeMentor f2 = container.getBean(FullTimeMentor.class);
 
         String str = container.getBean(String.class);
-        Integer number = container.getBean("number", Integer.class);
-        Integer number01 = container.getBean("number021",Integer.class);
+        //Integer number = container.getBean("number", Integer.class);
+//        Integer number01 = container.getBean("number01", Integer.class);
+//        Integer number02 = container.getBean("number01", Integer.class);
+        Integer intNum = container.getBean(Integer.class);
 
         System.out.println("str = " + str);
-        System.out.println("number = " + number);
-        System.out.println("number01 = " + number01);
+        // System.out.println("number = " + number01);
+        //System.out.println("number02 = " + number02);
+
+        System.out.println("intNum = " + intNum);
 
 
         System.out.println(ft);
         System.out.println(f2);
-        System.out.println(f2==ft);
+        System.out.println(f2 == ft);
 
         f2.createAccount();
 
