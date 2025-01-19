@@ -8,10 +8,11 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
 //@Scope("prototype") each call creates new object
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 @Component
-@Lazy(value = true)
+@Lazy()
 public class CommentService {
     private final CommentRepository commentRepository;
     private final CommentNotificationProxy commentNotificationProxy;
