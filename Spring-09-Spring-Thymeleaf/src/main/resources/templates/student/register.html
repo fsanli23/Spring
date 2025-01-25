@@ -27,7 +27,8 @@
 
     <p th:each="name : ${students}" th:text="${name.firstName}">names</p>
 
-
+    <div th:replace="fragments/index :: footer-menu">
+    </div>
 
 
 

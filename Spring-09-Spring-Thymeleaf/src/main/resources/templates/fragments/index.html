@@ -8,13 +8,13 @@
     <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
-<h2 class="display-1 alert-danger">Welcome to welcome page :)!</h2>
-<a th:href="@{/student/register}">Go to Register</a>
-<h2 class="cydeo">My custom class</h2>
-l
-<img th:src="@{/images/welcome-38249.png}">
+<div th:fragment="main-menu">
+    <a href="https://cydeo.com">Cydeo</a>
+</div>
 
-<div th:replace="fragments/index :: footer-menu"></div>
-<p th:replace="fragments/index::main-menu"></p>
+<p th:fragment="footer-menu">
+    <a href="privacy">Privacy</a>
+    <a href="Term and condition">term and conditions</a>
+</p>
 </body>
 </html>
