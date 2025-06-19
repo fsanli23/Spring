@@ -8,6 +8,8 @@ import java.util.List;
 public class DataGenerator {
     static Faker faker = new Faker();
 
+    public DataGenerator() {
+    }
 
     public static List<Student> createStudent( ) {
 

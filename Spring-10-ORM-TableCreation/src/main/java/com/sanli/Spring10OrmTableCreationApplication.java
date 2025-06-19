@@ -1,4 +1,4 @@
-package com.sanli.spring10ormtablecreation;
+package com.sanli;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
