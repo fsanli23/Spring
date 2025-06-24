@@ -27,6 +27,7 @@ public class Employees extends BaseEntity {
     @JoinColumn(name = "department_id" )
     private Department department;
 
+
    @OneToOne(cascade = CascadeType.PERSIST)
    @JoinColumn(name = "redionId")
     private  Region region;
