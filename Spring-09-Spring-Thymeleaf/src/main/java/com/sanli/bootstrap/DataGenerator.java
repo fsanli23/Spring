@@ -11,18 +11,18 @@ public class DataGenerator {
     public DataGenerator() {
     }
 
-    public static List<Student> createStudent( ) {
-
-        return List.of(
-                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
-                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
-                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
-                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
-                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state())
-
-        );
-
-
-    }
+//    public static List<Student> createStudent( ) {
+//
+//        return List.of(
+//                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
+//                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
+//                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
+//                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state()),
+//                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(15, 40), faker.address().state())
+//
+//        );
+//
+//
+//    }
 
 }
