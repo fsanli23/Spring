@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class Spring14OrmQueriesApplicationTests {
 
+
 	@Test
 	void contextLoads() {
 	}
