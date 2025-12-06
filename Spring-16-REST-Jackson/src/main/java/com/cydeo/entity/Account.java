@@ -1,6 +1,8 @@
 package com.cydeo.entity;
 
 import com.cydeo.enums.UserRole;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,6 +14,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @Table(name = "account_details")
+@JsonIgnoreProperties(value = {"state", "city"}, ignoreUnknown = true)
 public class Account extends BaseEntity {
 
     private String name;
@@ -27,6 +30,8 @@ public class Account extends BaseEntity {
     private UserRole role = UserRole.USER;
 
     @OneToOne(mappedBy = "account")
+    @JsonBackReference
+    // this is part back part of the reference - it will be omitted from serialization- use this when there is a relationship between objects
     private User user;
 
 }

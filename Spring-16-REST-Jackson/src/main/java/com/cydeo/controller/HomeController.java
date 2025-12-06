@@ -12,8 +12,8 @@ import java.util.List;
 @RestController
 public class HomeController {
 
-    private UserRepository userRepository;
-    private AccountRepository accountRepository;
+    private final UserRepository userRepository;
+    private final AccountRepository accountRepository;
 
     public HomeController(UserRepository userRepository, AccountRepository accountRepository) {
         this.userRepository = userRepository;
