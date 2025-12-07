@@ -4,6 +4,7 @@ import com.cydeo.entity.Account;
 import com.cydeo.entity.User;
 import com.cydeo.repository.AccountRepository;
 import com.cydeo.repository.UserRepository;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
