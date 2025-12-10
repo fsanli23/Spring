@@ -1,9 +1,9 @@
 
 package com.cydeo.dto;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
-
+import jakarta.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "catchPhrase",
     "bs"
 })
-
+@Generated("jsonschema2pojo")
 public class Company {
 
     @JsonProperty("name")
@@ -27,7 +27,7 @@ public class Company {
     @JsonProperty("bs")
     private String bs;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("name")
     public String getName() {
